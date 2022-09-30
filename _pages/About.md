@@ -12,7 +12,7 @@ Most websites have a **/about** page like this one where visitors can find backg
 
 A **/packaging** page lets visitors know how your company thinks about packaging, and what they should do with your packaging.
 
-## Why do you need a /packaging page?
+## Why have a /packaging page?
 
 Being responsible about packaging waste is an important issue to a growing number of people.
 
