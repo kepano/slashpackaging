@@ -2,6 +2,7 @@
 layout: default
 title: About
 id: about
+redirect_from: /join
 permalink: /about
 ---
 
