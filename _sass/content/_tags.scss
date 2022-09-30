@@ -1,0 +1,13 @@
+.tag {
+  border: 1px solid var(--color-outline);
+  padding: 0.1em 0.5em 0.15em;
+  border-radius: 1em;
+  font-size: var(--font-smallest);
+  color: var(--color-muted);
+  line-height: 2;
+  text-decoration: none;
+  &:hover {
+      box-shadow: none;
+      border-radius: 1em;
+  }
+}

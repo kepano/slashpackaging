@@ -1,0 +1,41 @@
+#theme-toggle {
+  &:after {
+    content: '';
+  }
+  height: 20px;
+  width: 36px;
+  display: block;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  float: right;
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+.theme-toggle-slide {
+  height: 20px;
+  border: 1px solid var(--color-faint);
+  border-radius: 24px;
+  width: 100%;
+  position: absolute;
+}
+.theme-toggle-switch {
+  position: absolute;
+  z-index: 9;
+  top: 2px;
+  left: 2px;
+  right: auto;
+  background-color: var(--color-background-primary);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: left 0.1s linear;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23FFCC33' %3E%3Cpath fill-rule='evenodd' d='M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+}
+.theme-dark .theme-toggle-switch {
+  left: 18px;
+  transition: left 0.1s linear;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23FFCC33' %3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /%3E%3C/svg%3E");
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h2><a href="/" class="muted internal-link">All</a> <span class="faint">/</span> {{ page.tag | capitalize }}</h2>
+<br>
+
+{% assign pages = site.directory | sort: 'title' %}
+<table>
+{% for post in pages %}
+{% if post.tags contains page.tag %}
+  <tr>
+    <td><a href="{{ post.url }}" class="internal-link">{{ post.title }}</a></td>
+    <td class="mh"><a href="https://{{ post.domain }}/packaging" target="_blank" class="muted">{{ post.domain }}/packaging</a></td>
+    <td>{% for tag in post.tags %}
+          <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/" class="tag">{{ tag }}</a>
+      {% endfor %}</td>
+  </tr>
+{% endif %}
+{% endfor %}
+</table>

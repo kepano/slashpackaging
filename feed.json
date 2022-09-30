@@ -1,0 +1,25 @@
+---
+layout: null
+---
+{% assign posts = site.directory %}
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": {{ site.name | smartify | jsonify }},
+    {% if site.description %}"description": {{ site.description | smartify | jsonify }},{% endif %}
+    "home_page_url": "{{ site.url }}/",
+    "feed_url": "{{ site.url }}/feed.json",
+    "expired": false,
+    "items": [
+{% for post in posts %}
+        {
+            "id": "{{ post.id }}",
+            "title": {{ post.title | smartify | jsonify }},
+            "content_html": {{ post.content | jsonify }},
+            "url": "{{ site.url }}{{ post.url }}",
+            "summary": {{ post.excerpt | smartify | jsonify }},
+            "date_published": "{{ post.date }}"
+            {% comment %}"author": "{{ post.author }}"{% endcomment %}
+        }{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+    ]
+}

@@ -1,0 +1,43 @@
+name:                Stephan Ango
+title:               Slash Packaging
+twitter:             slashpackaging
+url:                 https://slashpackaging.org
+include:             ['_pages']
+
+# You may need to change the base URL depending on your deploy configuration.
+# Specifically, when using GitHub Pages, the baseurl should point to where GitHub
+# Pages deploys your repository (which is usually the repository name).
+baseurl:             ''
+
+# If you are using a host that cannot resolve URLs that do
+# not end with .html (such as Neocities), set this to 'true'.
+use_html_extension:  false
+
+# Set to `true` to open non-internal links in new tabs, or
+# set to `false` to open non-internal links in current tab.
+open_external_links_in_new_tab: true
+
+permalink:           pretty
+relative_permalinks: false
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+collections:
+  directory:
+    output: true
+    permalink: /:slug
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: "default"
+  - scope:
+      path: "_directory/**/*.md"
+    values:
+      layout: "page"
+
+tag_page_layout: tag
+tag_page_dir: tag

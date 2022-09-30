@@ -1,0 +1,12 @@
+# Generated website directory
+_site/
+
+# Sass cache
+.sass-cache/
+
+# Jekyll cache & metadata
+.jekyll-cache/
+.jekyll-metadata
+
+# Obsidian config
+.obsidian/

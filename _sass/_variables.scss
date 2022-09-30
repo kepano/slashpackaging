@@ -1,0 +1,49 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --border-radius: 4px;
+
+  --font-small: 0.933em;
+  --font-smaller: 0.875em;
+  --font-smallest: 0.8em;
+
+  --paragraph-max-width: 35em;
+}
+
+:root {
+  --color-background-primary: #fcfff0;
+  --color-background-secondary: rgba(0,0,0,0.05);
+  --color-background-hover: hsla(182, 84%, 32%, 0.1);
+  --color-selection: hsla(182, 84%, 32%, 0.1);
+
+  --color-primary: hsl(0, 0%, 10%);
+
+  --color-muted: rgba(88,113,79,.8);
+  --color-faint: rgba(88,113,79,.4);
+
+  --color-action: #147d82; 
+  --color-action-muted: hsla(182, 84%, 32%, 0.6);
+  --color-action-faint: hsla(182, 84%, 32%, 0.35);
+
+  --color-outline: rgba(88,113,79,.2);
+  --color-outline-hover: #d8d8d5;
+  --color-outline-active: #c7c7c4;
+
+}
+
+.theme-dark {
+  --color-background-primary: #233a39;
+  --color-background-secondary: rgba(255,255,255,0.05);
+
+  --color-primary: #d3d7c8;
+
+  --color-muted: rgba(158,176,136,.8);
+  --color-faint: rgba(158,176,136,.4);
+
+  --color-action: #62aba4; 
+
+  --color-outline: rgba(158,176,136,.2);
+  --color-outline-hover: #d8d8d5;
+  --color-outline-active: #c7c7c4;
+}
+

@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>{% if page.id == "home" %}{{ site.title }}{% else %}{{ page.title }} &mdash; {{ site.title }}{% endif %}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+  <meta property="article:author"  content="{{ site.url }}/" />
+  {% endif %}
+
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" />
+
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:site"        content="@{{ site.twitter }}" />
+  <meta name="twitter:creator"     content="@{{ site.twitter }}" />
+  <meta name="twitter:title"       content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.image %}<meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
+
+  <meta property="og:site_name"    content="{{ site.title }}">
+  <meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title"        content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description"  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:type"         content="{% if page.title %}article{% else %}website{% endif %}">
+  {% if page.image %}<meta property="og:image"  content="{{ site.url }}{{ page.image }}" />{% endif %}
+
+  <script defer data-domain="slashpackaging.org" src="https://plausible.io/js/plausible.js"></script>
+
+</head>

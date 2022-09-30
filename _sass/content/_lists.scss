@@ -1,0 +1,10 @@
+ul > li {
+  list-style: disc;
+}
+ol > li,
+ul > li {
+  padding: 0.15rem 0;
+  &::marker {
+    color: var(--color-faint);
+  }
+}
