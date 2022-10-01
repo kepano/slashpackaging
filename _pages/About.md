@@ -3,7 +3,6 @@ layout: default
 title: About
 id: about
 permalink: /about
-redirect_from: /join
 ---
 
 ## What is a /packaging page?
