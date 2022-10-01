@@ -1,6 +1,7 @@
 name:                Stephan Ango
 title:               Slash Packaging
 twitter:             slashpackaging
+domain:              slashpackaging.org
 url:                 https://slashpackaging.org
 include:             ['_pages']
 
