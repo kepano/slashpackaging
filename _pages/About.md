@@ -3,6 +3,7 @@ layout: default
 title: About
 id: about
 permalink: /about
+redirect_from: /join
 ---
 
 ## What is a /packaging page?
@@ -24,6 +25,8 @@ Consumers want to support companies that are making sustainable packaging a prio
 It's easy! Add a page to your site at domain.com**/packaging**. You can also redirect that URL to an existing page on your site.
 
 When the URL is ready, [submit your page here](https://airtable.com/shrBfYGhy7OGUb40S).
+
+Slash Packaging is open source, so if you are comfortable with GitHub you can [submit a pull request directly to the repo](https://github.com/kepano/slashpackaging).
 
 ## What should our page include?
 
