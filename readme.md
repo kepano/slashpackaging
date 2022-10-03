@@ -1,3 +1,5 @@
+![Slash Packaging](/assets/cover.png)
+
 Slash Packaging is an open source directory of businesses that offer packaging sustainability information on their website at the URL **/packaging**. Learn more at [slashpackaging.org/about](https://www.slashpackaging.org/about)
 
 ## Contribute
