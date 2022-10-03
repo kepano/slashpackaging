@@ -17,7 +17,7 @@ If you would like to submit a new page to the directory, open a pull request fol
 | date      | yes      | Date of the submission to the directory     |
 | tags      | no       | Up to 3 tags that describe the business     |
 
-
+Alternatively you can [fill out the form here](https://airtable.com/shrBfYGhy7OGUb40S) and I will add your page.
 
 ## Run the site locally
 
