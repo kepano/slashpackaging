@@ -4,6 +4,7 @@ twitter:             slashpackaging
 domain:              slashpackaging.org
 url:                 https://slashpackaging.org
 include:             ['_pages']
+metadescription:     "Slash Packaging is a directory of businesses that offer packaging sustainability information on their website at the URL /packaging"
 
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
