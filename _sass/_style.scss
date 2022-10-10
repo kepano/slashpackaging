@@ -20,7 +20,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-background-primary);
-  box-sizing: content-box;
   font-family: var(--font-family);
   margin: 0 auto;
   line-height: 1.5;
@@ -28,7 +27,7 @@ body {
   overflow-x: hidden;
   font-size:1.8rem;
   font-size: calc(1.5rem + 0.25vw);
-  max-width: 48em;
+  max-width: 56em;
   color: var(--color-primary);
 }
 
@@ -152,11 +151,20 @@ td {
   }
 }
 
-.backlink-box {
-  background: var(--color-background-secondary);
-  padding: 1em;
-  border-radius: var(--border-radius);
-  line-height: 1.3;
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 code {

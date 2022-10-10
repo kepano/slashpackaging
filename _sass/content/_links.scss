@@ -20,21 +20,12 @@ a {
     box-shadow: 0 0 0 2px var(--color-background-hover);
   }
 
-  &:after {
-    position: relative;
-    top: -0.5em;
-    font-size: 0.7em;
-    content: "↗";
-  }
-
-  &.tag,
-  &.plain,
-  &.internal-link,
-  &.footnote,
-  &.reversefootnote {
-    &:after {
-      content: "";
-    }
+  &:not(.plain):not(.tag):not(.internal-link):not(.footnote):not(.reversefootnote) {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='2.5' stroke='%237A8F6F' opacity='0.6' class='w-6 h-6'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25' /%3E%3C/svg%3E%0A");
+    background-position: right 33%;
+    background-repeat: no-repeat;
+    background-size: 0.7em;
+    padding-right: 0.75em;
   }
 
   &.plain {
