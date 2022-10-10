@@ -7,4 +7,4 @@ permalink: /
 
 ## Businesses committed to packaging sustainability
 
-Slash Packaging is an open soure directory of businesses that offer packaging sustainability information on their website at the URL */packaging*. <a href="/about" class="muted internal-link">Learn more.</a>
+Slash Packaging is an open source directory of businesses that offer packaging sustainability information on their website at the URL */packaging*. <a href="/about" class="muted internal-link">Learn more.</a>
