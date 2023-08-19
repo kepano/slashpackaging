@@ -20,7 +20,7 @@ module Jekyll
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'tag.html')
       self.data['tag'] = tag
-      self.data['title'] = "Businesses tagged '{tag}'"
+      self.data['title'] = "Businesses tagged '#{tag}'"
     end
   end
 end
