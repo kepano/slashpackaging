@@ -48,4 +48,4 @@ Slash Packaging is only for businesses that sell packaged products. We do not ac
 
 ## Who is behind this?
 
-Hi! I'm [Stephan Ango](https://stephanango.com/). I'm the creator of Slash Packaging.
+Hi! I'm [Steph Ango](https://stephango.com/). I'm the creator of Slash Packaging.
